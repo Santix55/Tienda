@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Tienda Pokemon</title>
+	</head>
+	
+	<body>
+		<p>Productos</p>
+		<div class="container">
+			<div class="row">
+			
+				<div id="codigo0" style="visibility:hidden;">0</div>
+				<div id="codigo1" style="visibility:hidden;">1</div>
+			
+				<!-- PRODUCTO 0 -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-bottom:40px;">
+					<img id="imagen0" src="img/producto0.png" class="img-thumbnail" alt="img/producto0.png"><br>
+					<table>
+						<tr>
+							<td colspan="2"> <h6 style="text-align: center;" id="nombre0">Pokeball</h6> </td>
+						</tr>
+						<tr>
+							<td colspan="2"> <h6 style="text-align: center;"> <output id="precio0">300</output>₽</h6> </td>
+						</tr>
+						<tr>
+							<td><input type="number" style="width: 75px;" value="1" min="1" max="999" class="form-control" id="cantidad0"></td>
+							<td><button type="button" class="btn btn-primary"  onclick="anyadirAlCarrito(0)"><i class="bi bi-bag-plus"></i> Comprar</button></td>
+						</tr>
+					</table>
+					<p><small>Perfecta para capturar pokemons con bajo ratio de captura. Clásica y barata.</small></p>
+				</div>
+				
+				<!-- PRODUCTO 1 -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<img id="imagen1" src="img/producto1.png" class="img-thumbnail" alt="img/producto1.png"><br>
+					<table>
+						<tr>
+							<td colspan="2"> <h6 style="text-align: center;" id="nombre1">Muñeco</h6> </td>
+						</tr>
+						<tr>
+							<td colspan="2"> <h6 style="text-align: center;"> <output id="precio1">400</output>₽</h6> </td>
+						</tr>
+						<tr>
+							<td><input type="number" style="width: 75px;" value="1" min="1" max="999" class="form-control" id="cantidad1"></td>
+							<td><button type="button" class="btn btn-primary" onclick="anyadirAlCarrito(1)"><i class="bi bi-bag-plus"></i> Comprar</button></td>
+						</tr>
+					</table>
+					<p><small>Su adorable aspecto puede resultar muy útil para distraer pokemons salvajes con el fin de salir huyendo del combate</small></p>
+				</div>
+				
+				<!-- PRODUCTO 2 -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<img src="img/producto2.png" class="img-thumbnail" alt="producto2.png"><br>
+					
+					<table>
+						<tr>
+							<td colspan="2"> <h6 style="text-align: center;">Poción Max</h6> </td>
+						</tr>
+						<tr>
+							<td colspan="2"> <h6 style="text-align: center;">500₽</h6> </td>
+						</tr>
+						<tr>
+							<td><input type="number" style="width: 75px;" value="1" min="1" max="999" class="form-control" ></td>
+							<td><button type="button" class="btn btn-primary"><i class="bi bi-bag-plus"></i> Comprar</button></td>
+						</tr>
+					</table>
+					<p><small>Restaura todos los PS (Puntos de Salud) de un pokemon. No hace efecto si el pokemon esta debilitado.</small></p>
+				</div>
+			
+				<!-- PRODUCTO 3 -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<img src="img/producto3.png" class="img-thumbnail" alt="producto3.jpg"><br>
+					
+					<table>
+						<tr>
+							<td colspan="2"> <h6 style="text-align: center;">Velocidad X</h6> </td>
+						</tr>
+						<tr>
+							<td colspan="2"> <h6 style="text-align: center;">600₽</h6> </td>
+						</tr>
+						<tr>
+							<td><input type="number" style="width: 75px;" value="1" min="1" max="999" class="form-control" ></td>
+							<td><button type="button" class="btn btn-primary"><i class="bi bi-bag-plus"></i> Comprar</button></td>
+						</tr>
+					</table>
+					<p><small>Aumenta en 1 el factor de la estadistica de velocidad de un pokemon durante el combate. Ideal para pokemons con grandes estadisticas ofensivas.</small></p>
+				</div>
+				
+			</div>
+		</div>
+	
+		<footer>
+		</footer>
+	</body>
+</html>

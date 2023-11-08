@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Tienda Pokemon</title>
+	</head>
+
+	<body>
+		
+		<!-- SECCIÓN ADAPTABLE -->
+		<div class="vh-100">
+		  <div class="container py-5 h-100">
+		    <div class="row d-flex align-items-center justify-content-center h-100">
+		      <div class="col-md-8 col-lg-7 col-xl-6">
+		        <img src="img/pawmotLogin.png"
+		          class="img-fluid" alt="Phone image">
+		      </div>
+		      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+		      
+		      	<!-- FORMULARIO DE AUTENTICACION -->
+		        <form>
+		          <!-- Usuario -->
+		          <div class="form-outline mb-4">
+		            <input type="text" id="usuario" class="form-control form-control-lg">
+		            <label class="form-label"><i class="bi bi-person-circle"></i> Usuario</label>
+		          </div>
+		
+		          <!-- Contraseña -->
+		          <div class="form-outline mb-4">
+		            <input type="password" id="password" class="form-control form-control-lg">
+		            <label class="form-label"><i class="bi bi-key-fill"></i> Contraseña</label>
+		          </div>
+		          
+		          <!-- Linea de radio buttons -->
+		          <div class="form-outline mb-4">
+			          <div class="form-check form-check-inline">
+					      <input class="form-check-input" type="radio" name="login" value="acceso" checked>
+					      <label class="form-label">Acceso</label>
+					  </div>
+	
+					 <div class="form-check form-check-inline">
+					       <input class="form-check-input" type="radio" name="login" value="registro" onclick="Cargar('./html/usuario_registro.html','cuerpo')">
+					       <label class="form-label">Registro</label>
+					  </div>
+				  </div>
+
+		
+		          <!-- Botón para entrar -->
+		          <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Cargar('./html/usuario_registrado.html','cuerpo')"><i class="bi bi-box-arrow-in-right"></i> Entrar</button>
+		        </form>
+		        
+		      </div>
+		    </div>
+		 </div>
+		 
+		</div>
+		<footer>
+		</footer>
+	</body>
+</html>

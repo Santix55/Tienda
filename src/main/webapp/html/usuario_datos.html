@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Tienda Pokemon</title>
+	</head>
+		
+	<body>
+		
+		<!-- SECCIÓN ADAPTABLE -->
+		<div class="vh-100">
+		  <div class="container py-5 h-100">
+		    <div class="row d-flex align-items-center justify-content-center h-100">
+		      <div class="col-md-8 col-lg-7 col-xl-6">
+		        <img src="img/pawmotLogin.png"
+		          class="img-fluid" alt="Phone image">
+		      </div>
+		      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+		      
+		      	<!-- FORMULARIO DE CONSULTA O MODIFICACIÓN -->
+		        <form>
+		          
+		          <!-- Nombre -->
+		          <div class="form-outline mb-4">
+		            <input type="text" name="nombre" class="form-control form-control-lg" value="Santiago Millán Giner">
+		            <label class="form-label"><i class="bi bi-person-fill"></i> Nombre y Apellidos</label>
+		          </div>
+		          
+		          <!-- Telefono -->
+		          <div class="form-outline mb-4">
+		            <input type="text" name="telefono" class="form-control form-control-lg" value="963 12 34 56">
+		            <label class="form-label" ><i class="bi bi-telephone-fill"></i> Telefono</label>
+		          </div>
+		          
+		          <!-- ContraseÃ±a -->
+		          <div class="form-outline mb-4">
+		            <input type="password" name="clave" class="form-control form-control-lg" >
+		            <label class="form-label" ><i class="bi bi-key-fill"></i> Contraseña <span class="text-info"><i class="bi bi-asterisk"></i>deja este campo vacío para dejarlo por defecto</span></label>
+		          </div>
+		          
+		          <!-- Repetir contraseÃ±a -->
+		          <div class="form-outline mb-4">
+		            <input type="password" name="clave2" class="form-control form-control-lg" >
+		            <label class="form-label" ><i class="bi bi-key-fill"></i> Repetir Contraseña <span class="text-info"><i class="bi bi-asterisk"></i></span></label>
+		          </div>
+		          
+		          <!-- Dirección -->
+		          <div class="form-outline mb-4">
+		            <input type="text" name="direccion" class="form-control form-control-lg" value="Valencia">
+		            <label class="form-label" ><i class="bi bi-geo-alt-fill"></i> Dirección <span class="text-danger"><i class="bi bi-asterisk"></i></label>
+		          </div>
+		          
+		          <hr class="hr" >
+		          
+		          <!-- Tarjeta de crédito -->
+		          <div class="form-outline mb-4">
+		            <input type="text" name="tarjeta" class="form-control form-control-lg" value="Valencia">
+		            <label class="form-label" ><i class="bi bi-credit-card"></i> Tarjeta</label>
+		          </div>
+		          
+		          <!-- Botón para modificar -->
+		          <button type="button" class="btn btn-success btn-lg btn-block" onclick="Cargar('./html/usuario_registrado.html','cuerpo')"><i class="bi bi-pen"></i><i class="bi bi-cart-check"></i> COMPRAR</button>
+		          
+		        </form>
+		        
+		      </div>
+		    </div>
+		 </div>
+		</div>
+		
+	<footer>
+	</footer>
+</html>
